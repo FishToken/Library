@@ -24,8 +24,8 @@ library.theme = {
     background = "rbxassetid://7625203985",
     tilesize = 90,
     cursor = true,
-    cursorimg = "https://t0.rbxcdn.com/42f66da98c40252ee151326a82aab51f",
-    backgroundcolor = Color3.fromRGB(20, 20, 20),
+    cursorimg = "rbxassetid://7767269282",
+    backgroundcolor = Color3.fromRGB(255, 255, 255),
     tabstextcolor = Color3.fromRGB(240, 240, 240),
     bordercolor = Color3.fromRGB(60, 60, 60),
     accentcolor = Color3.fromRGB(28, 56, 139),
@@ -174,9 +174,9 @@ function library:CreateWatermark(name, position)
                 if fps ~= oldfps then
                     watermark.label.Text = " " .. name:gsub("{game}", gamename):gsub("{fps}", fps .. " FPS") .. " "
         
-                    watermark.label.Size = UDim2.new(0, watermark.label.TextBounds.X+10, 0, 25)
-                    watermark.mainbar.Size = UDim2.new(0, watermark.label.TextBounds.X, 0, 25)
-                    watermark.topbar.Size = UDim2.new(0, watermark.label.TextBounds.X, 0, 1)
+                    watermark.label.Size = UDim2.new(0, watermark.label.TextBounds.X+10, 0, 30)
+                    watermark.mainbar.Size = UDim2.new(0, watermark.label.TextBounds.X, 0, 30)
+                    watermark.topbar.Size = UDim2.new(0, watermark.label.TextBounds.X, 0, 30)
 
                     watermark.Outline.Size = watermark.mainbar.Size + UDim2.fromOffset(2, 2)
                     watermark.BlackOutline.Size = watermark.mainbar.Size + UDim2.fromOffset(4, 4)
