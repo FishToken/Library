@@ -119,7 +119,7 @@ function library:CreateWatermark(name, position)
     watermark.label = Instance.new("TextLabel", watermark.mainbar)
     watermark.label.Name = "FPSLabel"
     watermark.label.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    watermark.label.BackgroundTransparency = 0
+    watermark.label.BackgroundTransparency = 1
     watermark.label.Position = UDim2.new(0, 0, 0, 0)
     watermark.label.Size = UDim2.new(0, 238, 0, 25)
     watermark.label.Font = library.theme.font
@@ -128,7 +128,7 @@ function library:CreateWatermark(name, position)
     watermark.label.Text = watermark.text
     watermark.label.TextColor3 = Color3.fromRGB(255, 255, 255)
     watermark.label.TextSize = 15
-    watermark.label.TextStrokeTransparency = 0.000
+    watermark.label.TextStrokeTransparency = 1.000
     watermark.label.TextXAlignment = Enum.TextXAlignment.Left
     watermark.label.Size = UDim2.new(0, watermark.label.TextBounds.X+10, 0, 25)
     
