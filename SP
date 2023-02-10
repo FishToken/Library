@@ -174,9 +174,9 @@ function library:CreateWatermark(name, position)
                 if fps ~= oldfps then
                     watermark.label.Text = " " .. name:gsub("{game}", gamename):gsub("{fps}", fps .. " FPS") .. " "
         
-                    watermark.label.Size = UDim2.new(0, watermark.label.TextBounds.X+10, 0, 30)
-                    watermark.mainbar.Size = UDim2.new(0, watermark.label.TextBounds.X, 0, 30)
-                    watermark.topbar.Size = UDim2.new(0, watermark.label.TextBounds.X, 0, 30)
+                    watermark.label.Size = UDim2.new(0, watermark.label.TextBounds.X+10, 0, 25)
+                    watermark.mainbar.Size = UDim2.new(0, watermark.label.TextBounds.X, 0, 25)
+                    watermark.topbar.Size = UDim2.new(0, watermark.label.TextBounds.X, 0, 25)
 
                     watermark.Outline.Size = watermark.mainbar.Size + UDim2.fromOffset(2, 2)
                     watermark.BlackOutline.Size = watermark.mainbar.Size + UDim2.fromOffset(4, 4)
@@ -875,7 +875,7 @@ function library:CreateWindow(name, size, hidebutton)
                 toggle.Items.Size = UDim2.fromOffset(60, toggle.BlackOutline.AbsoluteSize.Y)
                 toggle.Items.BorderSizePixel = 0
                 toggle.Items.BackgroundTransparency = 1
-                toggle.Items.BackgroundColor3 = Color3.new(0, 0, 0)
+                toggle.Items.BackgroundColor3 = Color3.new(255, 255, 255)
                 toggle.Items.Position = UDim2.fromOffset(sector.Main.Size.X.Offset - 71, 0)
 
                 toggle.ListLayout = Instance.new("UIListLayout", toggle.Items)
@@ -1197,7 +1197,7 @@ function library:CreateWindow(name, size, hidebutton)
                     dropdown.items = { }
                     function dropdown:Add(v)
                         local Item = Instance.new("TextButton", dropdown.ItemsFrame)
-                        Item.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+                        Item.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                         Item.TextColor3 = Color3.fromRGB(255, 255, 255)
                         Item.BorderSizePixel = 0
                         Item.Position = UDim2.fromOffset(0, 0)
